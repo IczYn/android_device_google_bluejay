@@ -231,6 +231,12 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     AvoidAppsInCutoutOverlay
 
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
+# GoogleCamera
+PRODUCT_PACKAGES += \
+    GoogleCamera
+
 # SKU specific RROs
 PRODUCT_PACKAGES += \
     SettingsOverlayGB17L \
