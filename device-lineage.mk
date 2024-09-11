@@ -42,9 +42,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.identity_credential.xml
 
+PRODUCT_USE_SCUDO := true
+
+
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
+
+# PixelParts
+include packages/apps/PixelParts/device.mk
