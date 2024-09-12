@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+TARGET_SYSTEM_PROP := device/google/bluejay/bluejay/phoneinfo.prop
+
 ifdef PHONE_CAR_BOARD_PRODUCT
     include device/google_car/$(PHONE_CAR_BOARD_PRODUCT)/BoardConfig.mk
 else
